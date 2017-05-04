@@ -1,0 +1,123 @@
+
+*, *:before , *:after {
+    margin:0;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.flex-center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing {
+    background: lightcoral; 
+}
+
+// navbar 
+nav {
+    @extend .flex-center;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    div {
+        flex-grow: 1;
+       
+
+        ul {
+            display:flex;
+            justify-content: flex-end;
+            list-style: none;
+            li {
+                margin: 10px;
+                a {
+                    text-decoration:none;
+                }
+
+            } 
+        }
+    }
+}
+
+// lead 
+.lead {
+    height: 200px;
+    padding: 40px;
+    text-align: right;
+    h1 {
+        margin: 30px;
+    }
+    p , button {
+        margin-top: 5px;
+        margin-right:30px;
+    }
+}
+
+.material-float {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.5);
+}
+
+.section-title {
+    text-align:center;
+    padding: 50px;
+}
+
+
+#areas {
+    padding: 10px;
+   
+    div:nth-child(2) {
+        display:flex;
+        flex-wrap: wrap;        
+        .box {
+            @extend .material-float;
+            @extend .flex-center;
+            flex-direction: column;
+            
+            flex-grow:1;
+            margin: 5px;
+
+            div:first-child {
+                padding: 30px;
+            }
+            div:last-child {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+
+#contato {
+    padding: 10px;
+    div:nth-child(2) {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    form {
+        display:flex;
+        flex-direction: column;
+        label {
+            display:flex;
+            margin: 5px;
+            
+            input {
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
+            }
+        }
+        .buttonContainer {
+            display:flex;
+            justify-content: flex-end;
+            button {
+                width: 80px;
+                margin: 10px;
+            }
+        }
+        
+    }
+}
