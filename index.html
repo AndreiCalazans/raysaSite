@@ -5,8 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!--<link rel="stylesheet" href="./external/font-awesome/css/font-awesome.css">-->
     <title>Raysa Raymundo</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <div class="logo">
                 <p>Raysa Raymundo</p>
             </div>
-            <div>
+            <div class='hide-on-small'>  
                 <ul>
                     
                         <li><a href="#">Home</a></li>
@@ -26,11 +27,16 @@
                     
                 </ul>
             </div>
+            <div class='show-on-small'>
+                <p>
+                    <i class=" fa fa-bars" aria-hidden="true"></i>
+                </p>
+            </div>
         </nav>
         <div class="lead">
             <h1>Exercendo o seu direito</h1>
             <p>slogan chamativo cheio de coisa legal</p>
-            <button>nos contate!</button>
+            <button><a href="#contato">nos contate!</a></button>
         </div>
     </div>
 
@@ -128,9 +134,9 @@
             <h2>Entre em Contato</h2>
             <p>Entre em contato, tire dúvidas ou marque uma reunião para discutirmos a respeito do seu processo.</p>
 
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> Raysa_gloria@hotmail.com</p>
-            <p><i class="fa fa-mobile" aria-hidden="true"></i> +55 27 99256-8566</p>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Linhares - ES - Brasil</p>
+            <p class='contact-info'><i class="fa fa-envelope" aria-hidden="true"></i> Raysa_gloria@hotmail.com</p>
+            <p class='contact-info'><i class="fa fa-mobile" aria-hidden="true"></i> +55 27 99256-8566</p>
+            <p class='contact-info'><i class="fa fa-map-marker" ></i> Linhares - ES - Brasil</p>
         </div>
         <div>
             <form action="">
