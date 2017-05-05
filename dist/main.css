@@ -3,13 +3,16 @@
   font-family: sans-serif;
   line-height: 1.5; }
 
-.flex-center, nav, #areas div:nth-child(2) .box {
+.flex-center, nav, #areas div:nth-child(2) .box, footer, footer div {
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .landing {
-  background: lightcoral; }
+  background: url("http://searchengineland.com/figz/wp-content/seloads/2014/08/legal-law-courtroom-ss-1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 nav {
   background: rgba(0, 0, 0, 0.5);
@@ -50,6 +53,8 @@ nav {
     flex-wrap: wrap; }
     #areas div:nth-child(2) .box {
       flex-direction: column;
+      width: 300px;
+      height: 350px;
       flex-grow: 1;
       margin: 5px; }
       #areas div:nth-child(2) .box div:first-child {
@@ -58,7 +63,7 @@ nav {
         padding: 10px; }
 
 #contato {
-  padding: 10px; }
+  padding: 40px; }
   #contato div:nth-child(2) {
     text-align: center;
     margin-bottom: 30px; }
@@ -78,3 +83,17 @@ nav {
       #contato form .buttonContainer button {
         width: 80px;
         margin: 10px; }
+
+footer {
+  flex-direction: column;
+  padding-bottom: 40px;
+  background: #393939;
+  background: #393939 linear-gradient(130deg, #282828, #464646) no-repeat fixed; }
+  footer div {
+    flex-grow: 1; }
+  footer .user-rights {
+    text-align: right;
+    padding: 20px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    line-height: 2; }

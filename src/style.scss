@@ -12,7 +12,11 @@
 }
 
 .landing {
-    background: lightcoral; 
+    background: url('http://searchengineland.com/figz/wp-content/seloads/2014/08/legal-law-courtroom-ss-1920.jpg'); 
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
 // navbar 
@@ -74,7 +78,8 @@ nav {
             @extend .material-float;
             @extend .flex-center;
             flex-direction: column;
-            
+            width:300px;
+            height:350px;
             flex-grow:1;
             margin: 5px;
 
@@ -90,7 +95,7 @@ nav {
 
 
 #contato {
-    padding: 10px;
+    padding: 40px;
     div:nth-child(2) {
         text-align: center;
         margin-bottom: 30px;
@@ -121,3 +126,29 @@ nav {
         
     }
 }
+
+
+///////////////////////////footer
+
+footer {
+    @extend .flex-center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    background: #393939;
+    background: #393939 linear-gradient(130deg,#282828,#464646) no-repeat fixed;
+    div {
+        @extend .flex-center;
+        flex-grow:1;
+        div {
+        }
+    }
+     .user-rights {
+         
+         text-align:right;
+         padding:20px;
+            font-size: 10px;
+            letter-spacing: 3px;
+            line-height: 2;
+        }
+}
+
