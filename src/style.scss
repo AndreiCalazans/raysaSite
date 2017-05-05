@@ -22,7 +22,8 @@
 // navbar 
 nav {
     @extend .flex-center;
-    background: rgba(0,0,0,0.5);
+    color:white;
+    background: rgba(0,0,0,0.7);
     padding: 20px;
     div {
         flex-grow: 1;
@@ -36,6 +37,11 @@ nav {
                 margin: 10px;
                 a {
                     text-decoration:none;
+                    color:white;
+                    font-weight: bold;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
 
             } 
@@ -45,6 +51,9 @@ nav {
 
 // lead 
 .lead {
+    color:white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
     height: 200px;
     padding: 40px;
     text-align: right;
@@ -68,7 +77,8 @@ nav {
 }
 
 
-#areas {
+
+.section-with-boxes {
     padding: 10px;
    
     div:nth-child(2) {
@@ -79,13 +89,10 @@ nav {
             @extend .flex-center;
             flex-direction: column;
             width:300px;
-            height:350px;
+            min-height:350px;
             flex-grow:1;
             margin: 5px;
 
-            div:first-child {
-                padding: 30px;
-            }
             div:last-child {
                 padding: 10px;
             }
@@ -93,12 +100,49 @@ nav {
     }
 }
 
+.blog-images {
+    position:relative;
+    width: 100%;
+
+}
+#blog {
+    div:nth-child(2) {
+        position:relative;
+        p {
+            margin-bottom: 25px;
+        }
+        button {
+            position:absolute;
+            right:5px;
+            bottom:5px;
+        }
+    }
+}
 
 #contato {
+    @extend .flex-center;
+    align-items:flex-start;
     padding: 40px;
+    flex-wrap:wrap;
+    div {
+        flex-grow: 1;
+        width: 200px;   
+    }
+    div:first-child {
+        * {
+            margin: 20px;
+        }
+    }
     div:nth-child(2) {
-        text-align: center;
-        margin-bottom: 30px;
+        form {
+            padding: 30px;
+            border: 1px solid lightgrey;
+            box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.5);
+
+            input , textarea {
+                margin: 15px;
+            }
+        }
     }
 
     form {
@@ -140,8 +184,23 @@ footer {
         @extend .flex-center;
         flex-grow:1;
         div {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: flex-start;
+            ul {
+                height: 150px;
+                width:150px;
+                text-align:left;
+                li:first-child {
+                    list-style: none;
+                }
+                li a {
+                    color:white;
+                }
+              }
         }
     }
+  
      .user-rights {
          
          text-align:right;
