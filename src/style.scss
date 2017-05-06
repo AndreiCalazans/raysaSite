@@ -88,6 +88,11 @@ nav {
         width: 40%;
     }
 }
+// animate on scroll
+.hideme
+{
+    opacity:0;
+}
 
 // lead 
 .lead {
@@ -101,7 +106,7 @@ nav {
         line-height:1;
     }
     h1 {
-        margin: 30px;
+        margin: 50px 30px 5px 0;
     }
     p , button {
         margin-top: 5px;
@@ -137,7 +142,7 @@ nav {
             width:300px;
             min-height:350px;
             flex-grow:1;
-            margin: 5px;
+            margin: 10px;
 
             div:last-child {
                 padding: 10px;
@@ -212,6 +217,7 @@ nav {
 
             input , textarea {
                 margin: 15px;
+                padding:5px;
             }
         }
     }
