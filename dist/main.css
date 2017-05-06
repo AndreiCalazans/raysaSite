@@ -92,6 +92,13 @@ nav {
   text-align: center;
   padding: 50px; }
 
+#to-top-btn {
+  position: fixed;
+  right: 10px;
+  z-index: 20;
+  top: 10px;
+  display: none; }
+
 .section-with-boxes {
   padding: 10px; }
   .section-with-boxes div:nth-child(2) {
