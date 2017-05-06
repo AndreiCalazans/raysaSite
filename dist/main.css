@@ -14,10 +14,35 @@
   background-position: center;
   min-height: 440px; }
 
+.sideNav {
+  position: fixed;
+  left: -100%;
+  height: 100%;
+  width: 220px;
+  z-index: 10;
+  background: #4e4e4e;
+  box-shadow: 3px 0 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s; }
+  .sideNav ul {
+    padding: 0;
+    list-style: none; }
+    .sideNav ul li {
+      padding: 15px;
+      border-bottom: 1px solid #615c5c; }
+      .sideNav ul li a {
+        color: white;
+        text-decoration: none; }
+
+.showSideNav {
+  left: 0; }
+
 nav {
   color: white;
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px; }
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box; }
   nav div {
     flex-grow: 1;
     width: 100%;
@@ -44,8 +69,10 @@ nav {
   font-weight: bold;
   letter-spacing: 1.5px;
   height: 200px;
-  padding: 40px;
+  padding: 100px 40px;
   text-align: right; }
+  .lead * {
+    line-height: 1; }
   .lead h1 {
     margin: 30px; }
   .lead p, .lead button {
@@ -79,6 +106,9 @@ nav {
 .blog-images {
   position: relative;
   width: 100%; }
+
+#areas .box div:first-child {
+  text-align: center; }
 
 #blog h3 {
   padding: 10px; }
@@ -147,8 +177,7 @@ footer {
     footer div div {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      width: 100%; }
+      justify-content: flex-start; }
       footer div div ul {
         height: 150px;
         width: 150px;
