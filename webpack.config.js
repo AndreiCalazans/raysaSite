@@ -30,7 +30,19 @@ module.exports = {
                 use: extractPlugin.extract({
                     use: ['css-loader', 'sass-loader']
                 })
-            }
+            },
+             {
+                  test: /\.(jpe?g|png|gif|svg)$/i,
+                  use: [
+                         {
+                           loader: 'file-loader',
+                           options: {
+                               name:'[name].[ext]',
+                               outputPath: 'img/'
+                           }
+                         }]
+
+              }
         ]
     },
     plugins: [
