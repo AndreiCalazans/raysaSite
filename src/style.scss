@@ -159,6 +159,9 @@ nav {
 #to-top-btn {
     position:fixed;
     right: 10px;
+    width:50px;
+    height:50px;
+    padding:10px;
     z-index: 20;
     top: 10px;
     display:none;
@@ -373,8 +376,15 @@ footer {
     .hide-on-small {
     display:none;        
     }
+    nav .logo img {
+        width:150%;
+    }
+
     .show-on-small {
         display:inherit;
+        p {
+            font-size:30px;
+        }
     }
    
 }
