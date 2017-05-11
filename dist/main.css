@@ -158,7 +158,9 @@ nav {
       width: 300px;
       min-height: 350px;
       flex-grow: 1;
+
       margin: 10px; }
+
       .section-with-boxes div:nth-child(2) .box div:last-child {
         padding: 10px; }
 
@@ -169,6 +171,7 @@ nav {
 #areas .box div:first-child {
   text-align: center; }
 
+<<<<<<< HEAD
 #blog h3 {
   padding: 10px; }
 
@@ -180,6 +183,7 @@ nav {
     position: absolute;
     right: 5px;
     bottom: 5px; }
+
 
 .contact-info i {
   padding: 20px; }
